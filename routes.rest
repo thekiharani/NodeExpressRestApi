@@ -1,0 +1,28 @@
+GET http://127.0.0.1:3000/subscribers
+
+###
+
+GET http://127.0.0.1:3000/subscribers/5d41784bd1b6d2331f45efe5
+
+###
+
+POST http://127.0.0.1:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Jay Gitonga",
+    "subscribedChannel": "Kawy Photography"
+}
+
+###
+
+PATCH http://127.0.0.1:3000/subscribers/5d417906d1b6d2331f45efe7
+Content-Type: application/json
+
+{
+    "name": "Aria Kawi Gitonga"
+}
+
+###
+
+DELETE http://127.0.0.1:3000/subscribers/5d41784bd1b6d2331f45efe5
